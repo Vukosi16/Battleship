@@ -1,4 +1,4 @@
-const Ship = require('./app.js');
+const Ship = require('./Ship.js');
 
 test("Creates the object", () => {
     const ship = new Ship(3, 2, 1);
@@ -42,7 +42,7 @@ test("Has ship shunk", () => {
 
 test("Has the rigth location", () => {
     const ship = new Ship(3, 2, 1);
-    const { x , y} = ship.area()
+    const { x , y} = ship.shipLocation()
 
     expect(
         ship.xLocation

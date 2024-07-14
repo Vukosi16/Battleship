@@ -1,3 +1,5 @@
+const Gameboard = require("./Gameboard");
+
 class Ship{
     constructor(length, x, y){
         this.length = length,
@@ -18,7 +20,7 @@ class Ship{
         }
     }
     
-    area(){
+    shipLocation(){
         return {
             x: this.xLocation,
             y: this.yLocation
@@ -27,9 +29,6 @@ class Ship{
 
 }
 
-const ship = new Ship(3, 2, 1);
-const { x , y} = ship.area()
 
-console.log(x, y)
 
 module.exports = Ship;
