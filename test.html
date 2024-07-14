@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    function Book(title, author, pages, readOrNotRead) {
+      this.title = title;
+      this.author = author;
+      this.pages = pages;
+      this.readOrNotRead = readOrNotRead;
+      this.info = function() {
+        return `${this.title} by ${this.author} is ${this.pages} long and is ${this.readOrNotRead}`
+      }
+    }
+
+    const book1 = new Book("Harry Potter", "J.K Rowling", 295, "Not yet read!");
+    console.log(book1.info());
+
+    console.log(Object.getPrototypeOf(book1) === Book.prototype);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
