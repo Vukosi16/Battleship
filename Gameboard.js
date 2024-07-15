@@ -1,13 +1,14 @@
 const Ship = require('./Ship');
 
 class Gameboard {
-    constructor() {
+    constructor(owner) {
         this.board = [
             [1, 2, 3],
             [1, 2, 3],
             [1, 2, 3]
         ],
-        this.allShipsDown = true;
+        this.allShipsDown = true,
+        this.owner = owner;
     }
 
     placeShip(shipObject) {

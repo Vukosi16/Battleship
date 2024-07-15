@@ -1,4 +1,6 @@
 const Ship = require('./Ship.js');
+const Player = require("./Player");
+const Gameboard =  require("./Gameboard.js");
 
 test("Creates the object", () => {
     const ship = new Ship(3, 2, 1);
@@ -51,3 +53,4 @@ test("Has the rigth location", () => {
         ship.yLocation
     ).toBe(y)
 });
+
